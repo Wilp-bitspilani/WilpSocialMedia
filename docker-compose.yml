@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+
+  wilpsocialmedia:
+    image: ${DOCKER_REGISTRY-}wilpsocialmedia
+    build:
+      context: .
+      dockerfile: WilpSocialMedia/Dockerfile 

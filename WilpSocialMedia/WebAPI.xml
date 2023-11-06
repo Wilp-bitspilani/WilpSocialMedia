@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WilpSocialMedia</name>
+    </assembly>
+    <members>
+        <member name="M:WilpSocialMedia.Controllers.SocialMediaController.ListUser">
+            <summary>
+            Get List Of USer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WilpSocialMedia.Controllers.SocialMediaController.GetUserSubordinates(System.Guid)">
+            <summary>
+            Get List Subordinates of User
+            </summary>
+            <param name="idUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WilpSocialMedia.Controllers.SocialMediaController.GetUserParent(System.Guid)">
+            <summary>
+            Get List Parent Of User
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WilpSocialMedia.Controllers.SocialMediaController.AddUser(WilpSocialMedia.DTO.AccountUserCreateRequest)">
+            <summary>
+            Add User
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WilpSocialMedia.Controllers.SocialMediaController.GetUserConversation(System.Guid)">
+            <summary>
+            Get Conversation User
+            </summary>
+            <param name="idUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WilpSocialMedia.Controllers.SocialMediaController.GetConversationMessages(System.Guid)">
+            <summary>
+            Read Message User
+            </summary>
+            <param name="idConversation"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

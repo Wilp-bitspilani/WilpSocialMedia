@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+
+  wilpsocialmedia:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:80
+      - UserUrl=http://Wilpsocialmedia.apigateway/user-api/    
+      - MessageUrl=http://Wilpsocialmedia.apigateway/message-api/    
+      - ActivityUrl=http://Wilpsocialmedia.apigateway/activity-api/    
+    ports:
+      - "5111:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    networks:
+      - network
+ 
+networks:
+  network:
+    driver: bridge
+    name: mynetwork
